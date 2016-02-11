@@ -4,8 +4,9 @@ applications:
   memory: 512M
   disk_quota: 1G
   buildpack: nodejs_buildpack
-  host: agar-clone
+  host: my-personal
   domain: mybluemix.net
+  command: node server/server.js
   timeout: 180
   env:
-    NPM_CONFIG_PRODUCTION: false
+    env_type: production
