@@ -6,7 +6,7 @@ applications:
   buildpack: nodejs_buildpack
   host: my-personal
   domain: mybluemix.net
-  command: node server/server.js
+  command: gulp run
   timeout: 180
   env:
     env_type: production
